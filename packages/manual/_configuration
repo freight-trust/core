@@ -1,0 +1,46 @@
+Configure Hostname
+vi /etc/hostname
+    [HOSTNAME]
+
+vi /etc/hosts
+    127.0.0.1 localhost
+    [IP_ADDRESS] [HOSTNAME]
+    ::1 ip6-localhost ip6-loopback
+    fe00::0 ip6-localnet
+    ff00::0 ip6-mcastprefix
+    ff02::1 ip6-allnodes
+    ff02::2 ip6-allrouters
+    ff02::3 ip6-allhosts
+    [IPV6_ADDRESS] [HOSTNAME]
+Configure Locales
+dpkg-reconfigure locales
+    en_US.UTF-8 UTF-8
+    en_US.UTF-8
+
+vi /etc/environment
+    LC_CTYPE=en_US.UTF-8
+Configure Timezone
+dpkg-reconfigure tzdata
+    None of the above
+    UTC
+Update Packages
+apt-get update; apt-get upgrade
+Install Packages
+apt-get -y install apt-transport-https build-essential dirmngr htop python-dev python-virtualenv sudo tcl tcpdump unzip
+Add User
+adduser [USERNAME]
+    [PASSWORD]
+adduser [USERNAME] sudo
+mkdir -p /home/[USERNAME]/.ssh; chmod 700 /home/[USERNAME]/.ssh
+vi /home/[USERNAME]/.ssh/authorized_keys
+    [PUBLICKEY]
+chmod 600 /home/[USERNAME]/.ssh/authorized_keys; chown -R [USERNAME]:[USERNAME] /home/[USERNAME]/.ssh
+Update /home/[USERNAME]/.bashrc
+export REDIS_SOCKET=/tmp/redis.sock
+export REDIS_PASSWORD=[PASSWORD]
+Update /etc/ssh/sshd_config
+Port [PORT]
+LoginGraceTime 60
+PermitRootLogin no
+AllowUsers [USERNAME]
+PasswordAuthentication no

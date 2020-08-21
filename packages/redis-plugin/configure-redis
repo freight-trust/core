@@ -1,0 +1,88 @@
+sudo vi /etc/init.d/redis_0
+***************************************************************************
+#!/bin/sh
+EXEC=/usr/local/bin/redis-server
+CLIEXEC=/usr/local/bin/redis-cli
+PIDFILE=/var/run/redis_0.pid
+CONF="/etc/redis/0.conf"
+REDISSOCKET="/tmp/redis.sock"
+REDISPASSWORD="[PASSWORD]"
+
+###############
+# SysV Init Information
+# chkconfig: - 58 74
+# description: redis_0 is the redis daemon.
+### BEGIN INIT INFO
+# Provides: redis_0
+# Required-Start: $network $local_fs $remote_fs
+# Required-Stop: $network $local_fs $remote_fs
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Should-Start: $syslog $named
+# Should-Stop: $syslog $named
+# Short-Description: start and stop redis_0
+# Description: Redis daemon
+### END INIT INFO
+
+case "$1" in
+    start)
+        if [ -f $PIDFILE ]
+        then
+            echo "$PIDFILE exists, process is already running or crashed"
+        else
+            echo "Starting Redis server..."
+            $EXEC $CONF
+        fi
+        ;;
+    stop)
+        if [ ! -f $PIDFILE ]
+        then
+            echo "$PIDFILE does not exist, process is not running"
+        else
+            PID=$(cat $PIDFILE)
+            echo "Stopping ..."
+            $CLIEXEC -s $REDISSOCKET -a $REDISPASSWORD shutdown
+            while [ -x /proc/${PID} ]
+            do
+                echo "Waiting for Redis to shutdown ..."
+                sleep 1
+            done
+            echo "Redis stopped"
+        fi
+        ;;
+    status)
+        PID=$(cat $PIDFILE)
+        if [ ! -x /proc/${PID} ]
+        then
+            echo 'Redis is not running'
+        else
+            echo "Redis is running ($PID)"
+        fi
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    *)
+        echo "Please use start, stop, restart or status as first argument"
+        ;;
+esac
+***************************************************************************
+
+sudo update-rc.d redis_0 defaults
+
+sudo vi /etc/redis/0.conf
+    unixsocket /tmp/redis.sock
+    unixsocketperm 777
+    #save 900 1
+    #save 300 10
+    #save 60 10000
+    requirepass [PASSWORD]
+    maxclients 50000
+    maxmemory 34326183936
+    maxmemory-policy volatile-lru
+    notify-keyspace-events K$z
+    activerehashing no
+    client-output-buffer-limit normal 512mb 256mb 300
+    client-output-buffer-limit replica 512mb 256mb 300
+    client-output-buffer-limit pubsub 512mb 256mb 300
