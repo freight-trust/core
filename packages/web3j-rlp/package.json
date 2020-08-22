@@ -1,0 +1,31 @@
+{
+  "name": "web3j-rlp",
+  "version": "0.1.0",
+  "description": "The function returns the RLP encoding of the function selector (truncated message digest of the function signature) and the function parameters. This is intended to be used with Layer Two Atomic Cross-Blockchain Function Calls.",
+  "keywords": [
+    "web3j",
+    "atomic",
+    "swaps"
+  ],
+  "author": "sam <sam@freighttrust.com>",
+  "homepage": "https://github.com/freight-trust/",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "./gradlew -x test",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freight-trust/core.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/freight-trust/core/issues"
+  }
+}
