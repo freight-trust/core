@@ -1,0 +1,9 @@
+*.tar.gz
+*.zip
+*.tar
+*.key
+DS_Store
+*.idea
+*.vscode
+*.log
+node_modules

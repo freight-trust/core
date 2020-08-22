@@ -1,0 +1,25 @@
+directories:
+  .
+  -target
+  -packages/release/core
+  -packages/appsody-besu-stacks/
+  -packages/atomic-swap/
+  -packages/backup/
+  -packages/benchmarking/
+  -packages/besu/
+  -packages/besu-clique/
+  -packages/besu-maven-archetype/
+  -packages/common-core/
+  -packages/crosschain/
+  -packages/hyperledger/
+  -packages/kubernetes/
+  -packages/sync/
+  -packages/terraform
+
+targets:
+  //...
+
+test_sources:
+  packages/test/*
+
+
