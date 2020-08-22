@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const web3JRlp = require('..');
+const web3JRlp = require("..");
 
-describe('web3j-rlp', () => {
-    it('needs tests');
+describe("web3j-rlp", () => {
+  it("needs tests");
 });

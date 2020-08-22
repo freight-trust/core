@@ -101,20 +101,13 @@
     "attributes": {
       "absolutePath": "/Users/ezra/Developer/blockchain/truffle_webpack/contracts/MetaCoin.sol",
       "exportedSymbols": {
-        "MetaCoin": [
-          112
-        ]
+        "MetaCoin": [112]
       }
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            "^",
-            "0.4",
-            ".2"
-          ]
+          "literals": ["solidity", "^", "0.4", ".2"]
         },
         "id": 18,
         "name": "PragmaDirective",
@@ -126,9 +119,7 @@
           "absolutePath": "/Users/ezra/Developer/blockchain/truffle_webpack/contracts/ConvertLib.sol",
           "file": "./ConvertLib.sol",
           "scope": 113,
-          "symbolAliases": [
-            null
-          ],
+          "symbolAliases": [null],
           "unitAlias": ""
         },
         "id": 19,
@@ -137,18 +128,12 @@
       },
       {
         "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            112
-          ],
+          "linearizedBaseContracts": [112],
           "name": "MetaCoin",
           "scope": 113
         },
@@ -302,9 +287,7 @@
               "constant": false,
               "implemented": true,
               "isConstructor": true,
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "MetaCoin",
               "payable": false,
               "scope": 112,
@@ -315,9 +298,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 32,
@@ -326,9 +307,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 33,
@@ -363,9 +342,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 23,
                                   "type": "mapping(address => uint256)",
                                   "value": "balances"
@@ -389,9 +366,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 191,
                                       "type": "tx",
                                       "value": "tx"
@@ -452,9 +427,7 @@
               "constant": false,
               "implemented": true,
               "isConstructor": false,
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "sendCoin",
               "payable": false,
               "scope": 112,
@@ -590,9 +563,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 23,
                                   "type": "mapping(address => uint256)",
                                   "value": "balances"
@@ -616,9 +587,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 181,
                                       "type": "msg",
                                       "value": "msg"
@@ -640,9 +609,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 46,
                               "type": "uint256",
                               "value": "amount"
@@ -714,9 +681,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 23,
                                   "type": "mapping(address => uint256)",
                                   "value": "balances"
@@ -740,9 +705,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 181,
                                       "type": "msg",
                                       "value": "msg"
@@ -764,9 +727,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 46,
                               "type": "uint256",
                               "value": "amount"
@@ -811,9 +772,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 23,
                                   "type": "mapping(address => uint256)",
                                   "value": "balances"
@@ -825,9 +784,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 44,
                                   "type": "address",
                                   "value": "receiver"
@@ -844,9 +801,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 46,
                               "type": "uint256",
                               "value": "amount"
@@ -875,9 +830,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -898,9 +851,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 31,
                               "type": "function (address,address,uint256)",
                               "value": "Transfer"
@@ -924,9 +875,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 181,
                                   "type": "msg",
                                   "value": "msg"
@@ -943,9 +892,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 44,
                               "type": "address",
                               "value": "receiver"
@@ -957,9 +904,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 46,
                               "type": "uint256",
                               "value": "amount"
@@ -1020,9 +965,7 @@
               "constant": true,
               "implemented": true,
               "isConstructor": false,
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getBalanceInEth",
               "payable": false,
               "scope": 112,
@@ -1112,9 +1055,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "uint256",
                           "type_conversion": false
                         },
@@ -1143,9 +1084,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 16,
                                   "type": "type(library ConvertLib)",
                                   "value": "ConvertLib"
@@ -1167,9 +1106,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "uint256",
                               "type_conversion": false
                             },
@@ -1182,9 +1119,7 @@
                                       "typeString": "address"
                                     }
                                   ],
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 111,
                                   "type": "function (address) view returns (uint256)",
                                   "value": "getBalance"
@@ -1196,9 +1131,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 85,
                                   "type": "address",
                                   "value": "addr"
@@ -1254,9 +1187,7 @@
               "constant": true,
               "implemented": true,
               "isConstructor": false,
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getBalance",
               "payable": false,
               "scope": 112,
@@ -1351,9 +1282,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 23,
                               "type": "mapping(address => uint256)",
                               "value": "balances"
@@ -1365,9 +1294,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 101,
                               "type": "address",
                               "value": "addr"

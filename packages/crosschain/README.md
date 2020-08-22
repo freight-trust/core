@@ -1,7 +1,6 @@
-# Cross Chain 
+# Cross Chain
 
 ## Introduction
-
 
 - Swapping Ether on one blockchain for Ether on another blockchain.
 - Allowing for partial swapping of Ether. That is, allowing one entity to offer an

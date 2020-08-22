@@ -1,21 +1,21 @@
 {
   "types": {
     "EIP712Domain": [
-      {"name": "name", "type": "string"},
-      {"name": "version", "type": "string"},
-      {"name": "chainId", "type": "uint256"},
-      {"name": "verifyingContract", "type": "address"}
+      { "name": "name", "type": "string" },
+      { "name": "version", "type": "string" },
+      { "name": "chainId", "type": "uint256" },
+      { "name": "verifyingContract", "type": "address" }
     ],
     "Person": [
-      {"name": "name", "type": "string"},
-      {"name": "wallet", "type": "address"},
-      {"name": "personInfo", "type": "bytes"},
-      {"name": "personData", "type": "bytes3"}
+      { "name": "name", "type": "string" },
+      { "name": "wallet", "type": "address" },
+      { "name": "personInfo", "type": "bytes" },
+      { "name": "personData", "type": "bytes3" }
     ],
     "Mail": [
-      {"name": "from", "type": "Person"},
-      {"name": "to", "type": "Person"},
-      {"name": "contents", "type": "string"}
+      { "name": "from", "type": "Person" },
+      { "name": "to", "type": "Person" },
+      { "name": "contents", "type": "string" }
     ]
   },
   "primaryType": "Mail",

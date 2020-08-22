@@ -35,20 +35,13 @@
     "attributes": {
       "absolutePath": "/Users/ezra/Developer/blockchain/truffle_webpack/contracts/ConvertLib.sol",
       "exportedSymbols": {
-        "ConvertLib": [
-          16
-        ]
+        "ConvertLib": [16]
       }
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            "^",
-            "0.4",
-            ".2"
-          ]
+          "literals": ["solidity", "^", "0.4", ".2"]
         },
         "id": 1,
         "name": "PragmaDirective",
@@ -56,18 +49,12 @@
       },
       {
         "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "library",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            16
-          ],
+          "linearizedBaseContracts": [16],
           "name": "ConvertLib",
           "scope": 17
         },
@@ -77,9 +64,7 @@
               "constant": true,
               "implemented": true,
               "isConstructor": false,
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "convert",
               "payable": false,
               "scope": 16,
@@ -205,9 +190,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 3,
                               "type": "uint256",
                               "value": "amount"
@@ -219,9 +202,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 5,
                               "type": "uint256",
                               "value": "conversionRate"
